@@ -1,0 +1,27 @@
+{
+  "name": "langchain-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/openai": "^0.0.24",
+    "langchain": "^0.1.30"
+  },
+  "pnpm": {
+    "overrides": {
+      "@langchain/core": "0.1.5"
+    }
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
