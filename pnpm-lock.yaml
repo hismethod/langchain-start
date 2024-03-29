@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@langchain/core': 0.1.5
+  '@langchain/core': ~0.1.5
 
 dependencies:
   '@langchain/openai':
@@ -314,7 +314,7 @@ packages:
       ws:
         optional: true
     dependencies:
-      '@langchain/core': 0.1.5
+      '@langchain/core': 0.1.52
       '@langchain/openai': 0.0.24
       expr-eval: 2.0.2
       flat: 5.0.2
@@ -325,29 +325,30 @@ packages:
       - encoding
     dev: false
 
-  /@langchain/core@0.1.5:
-    resolution: {integrity: sha512-5RdZpbadMYXTKdZrWZ6JeYT09BZssprg+komE+FbXxW+kbGE0QJJaj8dnzPNdzVCAhDLQQTOV2CAM+vOLsaxzQ==}
+  /@langchain/core@0.1.52:
+    resolution: {integrity: sha512-AEyP99r7jijF33pyzaWtqCkiO9crotgethqq7jznAGlIojMCL9BT/id2DjVyN32SGFTpet273kkjsmEdFSHqpA==}
     engines: {node: '>=18'}
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.10
-      langsmith: 0.0.70
+      langsmith: 0.1.14
       ml-distance: 4.0.1
       p-queue: 6.6.2
       p-retry: 4.6.2
       uuid: 9.0.1
       zod: 3.22.4
+      zod-to-json-schema: 3.22.5(zod@3.22.4)
     dev: false
 
   /@langchain/openai@0.0.24:
     resolution: {integrity: sha512-4E9IYJDNVnuHxBV5mFPefaWu76dJREEW5WE2r4QKpHomBMReQVKT3TLiasl1rDI10axnJF9FPjsJG+MW93rCiQ==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.1.5
+      '@langchain/core': 0.1.52
       js-tiktoken: 1.0.10
-      openai: 4.29.2
+      openai: 4.30.0
       zod: 3.22.4
       zod-to-json-schema: 3.22.5(zod@3.22.4)
     transitivePeerDependencies:
@@ -698,7 +699,7 @@ packages:
     dependencies:
       '@anthropic-ai/sdk': 0.9.1
       '@langchain/community': 0.0.43
-      '@langchain/core': 0.1.5
+      '@langchain/core': 0.1.52
       '@langchain/openai': 0.0.24
       binary-extensions: 2.3.0
       js-tiktoken: 1.0.10
@@ -784,17 +785,6 @@ packages:
 
   /langchainhub@0.0.8:
     resolution: {integrity: sha512-Woyb8YDHgqqTOZvWIbm2CaFDGfZ4NTSyXV687AG4vXEfoNo7cGQp7nhl7wL3ehenKWmNEmcxCLgOZzW8jE6lOQ==}
-    dev: false
-
-  /langsmith@0.0.70:
-    resolution: {integrity: sha512-QFHrzo/efBowGPCxtObv7G40/OdwqQfGshavMbSJtHBgX+OMqnn4lCMqVeEwTdyue4lEcpwAsGNg5Vty91YIyw==}
-    hasBin: true
-    dependencies:
-      '@types/uuid': 9.0.8
-      commander: 10.0.1
-      p-queue: 6.6.2
-      p-retry: 4.6.2
-      uuid: 9.0.1
     dev: false
 
   /langsmith@0.1.14:
@@ -884,8 +874,8 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /openai@4.29.2:
-    resolution: {integrity: sha512-cPkT6zjEcE4qU5OW/SoDDuXEsdOLrXlAORhzmaguj5xZSPlgKvLhi27sFWhLKj07Y6WKNWxcwIbzm512FzTBNQ==}
+  /openai@4.30.0:
+    resolution: {integrity: sha512-jOaT4u7DpWzvuOuSxw5skuBbSuagw91Vd4IU/zP9qdgu6C19AAq4wzx+24e59wdEmsAG58enOUNf6t5V2WwN9g==}
     hasBin: true
     dependencies:
       '@types/node': 18.19.26
